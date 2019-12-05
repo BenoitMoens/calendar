@@ -1,5 +1,7 @@
 import React from 'react';
 import './Accueil.css';
+import './image.css';
+import './image.svg';
 
 const Accueil = () => {
     return(
