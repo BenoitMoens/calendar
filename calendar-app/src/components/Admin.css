@@ -1,0 +1,36 @@
+.adminHeader{
+    width: 100%;
+    height: 100px;
+    background-image: url('https://cdn-az.allevents.in/banners/d9b49451434d0cbbb04adc92c36240b9-rimg-w632-h233-gmir.jpg');
+    background-size: contain;
+    object-fit: fill;
+}
+
+input {
+    width: 85%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+label{
+    text-align: center;
+}
+footer{
+    height: 18vh;
+    width: 100%;
+    background-image: url('https://cdn-az.allevents.in/banners/d9b49451434d0cbbb04adc92c36240b9-rimg-w632-h233-gmir.jpg');
+    background-size: contain;
+    object-fit: fill;
+};
+
+a{
+    margin-bottom: 10px;
+};
+
+.formContainer{
+    background-color: red;
+    height: 1000px;
+    width: 100%;
+};
