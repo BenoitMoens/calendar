@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Admin from './components/Admin.js'
 import './App.css';
 
 function App() {
