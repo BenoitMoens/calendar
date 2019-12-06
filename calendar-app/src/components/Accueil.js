@@ -10,7 +10,7 @@ const Accueil = () => {
             <ParentTimer/>
             <div className="adminButton">
                 <button className="sizeOfButtonAdmin">
-                <NavLink className="center-text" activeClassName="active" exact to="/Admin">admin</NavLink>
+                <NavLink className="center-text1" activeClassName="active" exact to="/EditCalendar">EditCalendar</NavLink>
                 </button>
             </div>
 

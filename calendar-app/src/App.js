@@ -5,6 +5,7 @@ import Admin from './components/Admin.js'
 import './components/Accueil'
 import './App.css';
 import Accueil from './components/Accueil';
+import EditCalendar from './components/EditCalendar.js';
 //import Countdown from './components/Countdown.js/index.js';
 //import ParentTimer from './components/ParentTimer.js';
 // const app = express()
@@ -18,13 +19,21 @@ function App() {
       <BrowserRouter>
     <div>
       
-      <Link to="/Accueil"> Accueil </Link>
-      <Link to="/Admin"> Admin </Link>
-      <Link to="/Calendar"> Calendar </Link>
+      {/* <Link to="/Accueil"> Accueil </Link>
+      <Link to="/EditCalendar"><span className="link"> EditCalendar</span> </Link>
+      <Link to="/Calendar"> Calendar </Link> */}
      
       <Route path="/Accueil" component={Accueil}/>
-      <Route path="/Admin" component={Admin}/>
-      <Route path="/Calendar" component={Calendar}/>
+      <Route path="/EditCalendar" component={EditCalendar}/>
+      <Route
+        path='/Calendar'
+        render={(props) => <Calendar {...props} edit={false} />}
+      />
+      <Route
+        path='/EditCalendar'
+        render={(props) => <Calendar {...props} edit={true} />}
+      />
+  
     </div>
     
   </BrowserRouter>

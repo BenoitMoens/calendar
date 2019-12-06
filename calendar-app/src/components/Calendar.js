@@ -4,7 +4,7 @@ import { StyledApp } from "./AppStyles";
 import { createCalendar } from "./helpers";
 import Hatch from "./Hatch";
 import  Boxblock  from "./Boxblock";
-
+import  EditCalendar  from "./EditCalendar";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-function Calendar() {
+function Calendar(props) {
   const [hatches, setHatches] = useState([]);
 
   useEffect(() => {
@@ -24,6 +24,7 @@ function Calendar() {
       : createCalendar();
 
     setHatches(calendar);
+    
   }, []);
 
   // Store calendar in localStorage
@@ -39,21 +40,46 @@ function Calendar() {
     setHatches(updatedHatches);
   };
 
-  return (
-    <>
+
+  if(props.edit) {
+    return(
+      <>
       
       <GlobalStyle />
+      <>
+
       <StyledApp>
-        {hatches.map(hatch => (
-          <Hatch
-            key={hatch.id}
-            hatchData={hatch}
-            handleClick={handleFlipHatch}
-          />
-        ))}
+
+        <EditCalendar data={hatches} setHatches/>
+
       </StyledApp>
+      </>
+
     </>
-  );
+
+    
+    )
+
+  } else {
+    return (
+      <>
+        
+        <GlobalStyle />
+        <StyledApp>
+          
+          {hatches.map(hatch => (
+            <Hatch
+              key={hatch.id}
+              hatchData={hatch}
+              handleClick={handleFlipHatch}
+            />
+          ))}
+        </StyledApp>
+      </>
+    );
+  }
+
+
 }
 
 export default Calendar;

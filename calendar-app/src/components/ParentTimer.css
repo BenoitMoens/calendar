@@ -1,4 +1,5 @@
 .timer{
+    display: block;
     position: fixed;
     margin-left: 12%;
     font-size: 30px;
