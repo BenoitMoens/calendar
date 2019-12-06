@@ -1,0 +1,3 @@
+GET /calendar mycalendar.list
+POST /calendar mycalendar.create
+GET /calendar mycalendar.calendar.find, mycalendar.calendar.list
