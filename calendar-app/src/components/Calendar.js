@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import { StyledApp } from "./AppStyles";
 import { createCalendar } from "./helpers";
 import Hatch from "./Hatch";
+import  Boxblock  from "./Boxblock";
 
 
 
@@ -40,6 +41,7 @@ function Calendar() {
 
   return (
     <>
+      
       <GlobalStyle />
       <StyledApp>
         {hatches.map(hatch => (
