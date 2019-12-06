@@ -10,12 +10,11 @@ font-style: normal;
 }
 
 /*Partie mobile*/
-
 .background{
+    
     background-image: url('https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026690_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
     height: 100vh;
     width: 100vw;
 
@@ -28,8 +27,10 @@ font-style: normal;
 .adminButton{
     display: flex;
     justify-content: left;
+    
 }
 .sizeOfButtonUser{
+    
     font-family: MerryChristmasFlake;
     margin-top: 300px;
     color: white; 
@@ -91,9 +92,26 @@ font-style: normal;
     background: #144E75; 
 }
 
+.center-text{
+    text-decoration: none;
+}
+.center-text{
+    color: black;
+}
 /* Partie computer*/
 
 @media only screen and (min-width:800px) {
+
+    .background{
+    
+        background-image: url('https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026690_1280.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    
+    }
     .sizeOfButtonUser{
         font-family: MerryChristmasFlake;
         margin-top: 300px;
@@ -155,4 +173,7 @@ font-style: normal;
     .sizeOfButtonAdmin:active {
         background: #144E75; 
     }
+}
+.center-text{
+    color: black;
 }

@@ -4,6 +4,8 @@ import { StyledApp } from "./AppStyles";
 import { createCalendar } from "./helpers";
 import Hatch from "./Hatch";
 
+
+
 const GlobalStyle = createGlobalStyle`
   body {
     background: center / cover url("./img/calendar_backdrop.jpg");

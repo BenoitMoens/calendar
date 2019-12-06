@@ -1,0 +1,10 @@
+.timer{
+    position: fixed;
+    margin-left: 12%;
+    font-size: 30px;
+    background-color: rgba(102, 105, 111, 0.5);
+    border-radius: 20px;
+    border: 2px solid rgba(212,66,62);
+    padding: 15px;
+    
+}
