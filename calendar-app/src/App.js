@@ -28,7 +28,7 @@ function App() {
     </div>
     
   </BrowserRouter>
-      <Admin />
+
 
     </div>
     
