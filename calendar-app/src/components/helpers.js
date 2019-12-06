@@ -14,16 +14,16 @@ const shuffle = a => {
   return a;
 };
 
-// export const createHatches = () => {
-//   const hatchArray = new Array(24).fill(0).map((_, i) => ({
-//     id: `hatch-${i}`,
-//     nr: i + 1,
-//     img: `./img/${i + 1}.jpg`,
-//     text: `Just ${24 - i - 1} days left`,
-//     open: false
-//   }));
-//   return shuffle(hatchArray);
-// };
+export const createHatches = () => {
+  const hatchArray = new Array(24).fill(0).map((_, i) => ({
+    id: `hatch-${i}`,
+    nr: i + 1,
+    img: `./img/${i + 1}.jpg`,
+    text: `Just ${24 - i - 1} days left`,
+    open: false
+  }));
+  return shuffle(hatchArray);
+};
 
 const shouldBeLocked = (today, dayConcerned) => { 
   if(dayConcerned > today) {

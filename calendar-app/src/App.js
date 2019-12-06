@@ -7,6 +7,9 @@ import './App.css';
 import Accueil from './components/Accueil';
 //import Countdown from './components/Countdown.js/index.js';
 //import ParentTimer from './components/ParentTimer.js';
+// const app = express()
+// const express = require('express-router')()
+
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
     </div>
     
   </BrowserRouter>
+      <Admin />
 
     </div>
     
